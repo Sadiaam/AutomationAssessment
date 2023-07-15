@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="7" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-15T22:05:36 BDT" name="AutomationExcercise Suite" finished-at="2023-07-15T22:11:15 BDT" duration-ms="338996">
+    <groups>
+    </groups>
+    <test started-at="2023-07-15T22:05:36 BDT" name="AutomationExcercise Tests" finished-at="2023-07-15T22:11:15 BDT" duration-ms="338996">
+      <class name="com.testcases.ProcessedToCheckout2">
+        <test-method signature="againProceedForCheckout()[pri:0, instance:com.testcases.ProcessedToCheckout2@5c6648b0]" started-at="2023-07-15T22:09:47 BDT" name="againProceedForCheckout" finished-at="2023-07-15T22:10:28 BDT" duration-ms="40409" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- againProceedForCheckout -->
+      </class> <!-- com.testcases.ProcessedToCheckout2 -->
+      <class name="com.testcases.Login">
+        <test-method signature="verifyLoginWithValidCredentials()[pri:0, instance:com.testcases.Login@31304f14]" started-at="2023-07-15T22:07:37 BDT" name="verifyLoginWithValidCredentials" finished-at="2023-07-15T22:08:20 BDT" duration-ms="42781" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithValidCredentials -->
+      </class> <!-- com.testcases.Login -->
+      <class name="com.testcases.AddProductToCart">
+        <test-method signature="verifyHomePageVisibility()[pri:0, instance:com.testcases.AddProductToCart@2a65fe7c]" started-at="2023-07-15T22:06:16 BDT" name="verifyHomePageVisibility" finished-at="2023-07-15T22:06:42 BDT" duration-ms="26106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageVisibility -->
+      </class> <!-- com.testcases.AddProductToCart -->
+      <class name="com.testcases.VerifyAddressDetailsAndReviewOrder">
+        <test-method signature="verifyAddress()[pri:0, instance:com.testcases.VerifyAddressDetailsAndReviewOrder@34a3d150]" started-at="2023-07-15T22:08:20 BDT" name="verifyAddress" finished-at="2023-07-15T22:09:02 BDT" duration-ms="42074" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddress -->
+      </class> <!-- com.testcases.VerifyAddressDetailsAndReviewOrder -->
+      <class name="com.testcases.WriteCommentInTextBox">
+        <test-method signature="addComment()[pri:0, instance:com.testcases.WriteCommentInTextBox@2a4fb17b]" started-at="2023-07-15T22:09:02 BDT" name="addComment" finished-at="2023-07-15T22:09:47 BDT" duration-ms="45220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addComment -->
+      </class> <!-- com.testcases.WriteCommentInTextBox -->
+      <class name="com.testcases.Payment">
+        <test-method signature="makePayment()[pri:0, instance:com.testcases.Payment@6f1de4c7]" started-at="2023-07-15T22:10:28 BDT" name="makePayment" finished-at="2023-07-15T22:11:15 BDT" duration-ms="46999" status="FAIL">
+          <exception class="org.junit.ComparisonFailure">
+            <message>
+              <![CDATA[expected:<[]> but was:<[Your order has been placed successfully!]>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.junit.ComparisonFailure: expected:<[]> but was:<[Your order has been placed successfully!]>
+at org.junit.Assert.assertEquals(Assert.java:115)
+at org.junit.Assert.assertEquals(Assert.java:144)
+at com.testcases.Payment.makePayment(Payment.java:98)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.junit.ComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- makePayment -->
+      </class> <!-- com.testcases.Payment -->
+      <class name="com.testcases.ProceedToCheckOut">
+        <test-method signature="verifyHomePageVisibility()[pri:0, instance:com.testcases.ProceedToCheckOut@4135c3b]" started-at="2023-07-15T22:06:42 BDT" name="verifyHomePageVisibility" finished-at="2023-07-15T22:07:05 BDT" duration-ms="22681" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageVisibility -->
+      </class> <!-- com.testcases.ProceedToCheckOut -->
+      <class name="com.testcases.HomePageIsVisible">
+        <test-method signature="verifyHomePageVisibility()[pri:0, instance:com.testcases.HomePageIsVisible@2a3b5b47]" started-at="2023-07-15T22:05:36 BDT" name="verifyHomePageVisibility" finished-at="2023-07-15T22:06:16 BDT" duration-ms="39953" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageVisibility -->
+      </class> <!-- com.testcases.HomePageIsVisible -->
+      <class name="com.testcases.Register">
+        <test-method signature="verifyRegistration()[pri:0, instance:com.testcases.Register@6302bbb1]" started-at="2023-07-15T22:07:05 BDT" name="verifyRegistration" finished-at="2023-07-15T22:07:37 BDT" duration-ms="32553" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to find element with locator By.id: id_gender2
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.id: id_gender2
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at com.testcases.Register.verifyRegistration(Register.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegistration -->
+      </class> <!-- com.testcases.Register -->
+    </test> <!-- AutomationExcercise Tests -->
+  </suite> <!-- AutomationExcercise Suite -->
+</testng-results>
